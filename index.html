@@ -375,7 +375,7 @@ margin-top: 30px;
 /* For smaller screens like mobile and tablets */
 @media screen and (max-width: 768px) {
     .divider {
-        border-top: 4px solid rgb(247, 231, 231);
+        border-top: 2px solid rgb(247, 231, 231);
         margin: 0; /* Remove margin on small screens */
         width: 100%; /* Ensure full width on small screens */
         box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
@@ -383,8 +383,9 @@ margin-top: 30px;
 
     .about-frame,
     .service {
-        margin: 0;
+        margin: 30px;
         padding: 15px 0; /* Reduced padding on smaller screens */
+        width: 80%;
     }
 
     .container,
@@ -405,6 +406,7 @@ margin-top: 30px;
     .carousel-inner {
         height: 50vh; /* Adjust carousel height for mobile */
     }
+    
 }
 
 /* Desktop view stays the same */
@@ -443,8 +445,9 @@ margin-top: 30px;
     }
 
     .video-container {
-        width: 100%; /* Makes the video take up the full width */
-        margin: 0 auto; 
+        width: 90%; /* Makes the video take up the full width */
+        margin: 20px;
+        
     }
 }
 @media (max-width: 768px) {
@@ -454,7 +457,7 @@ margin-top: 30px;
 }
 @media (max-width: 768px) {
     .about-frame {
-        margin-top: 10px; /* Adjust margin */
+        margin-top: 20px; /* Adjust margin */
         padding: 10px; /* Adjust padding */
     }
 }
@@ -470,7 +473,19 @@ margin-top: 30px;
         margin-top: 20px; /* Adjust this value as needed */
         padding: 10px;
     }
+    .form-container{
+        width: 80%;
+        margin-top: 30px;
+    }
 }
+@media screen and (max-width: 768px) {
+    header h2 {
+        font-size: 0.5rem; /* Adjust the size to your preference */
+        line-height: 1.2; /* Adjust line height for better spacing */
+        text-align: center; /* Center-align the header if desired */
+    }
+}
+
 
    </style>
 </head>
@@ -506,7 +521,7 @@ margin-top: 30px;
     <header>
         <div class="header-text">
             <h1>Editkaro</h1>
-            <h2>Unleashing Creativity Through Digital Innovation</h2>
+            <h2>Unleashing Creativity with Digital Innovation</h2>
         </div>
     
         <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
