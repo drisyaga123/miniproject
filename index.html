@@ -370,21 +370,21 @@ margin-top: 30px;
             border-radius: 5px;
             text-align: center;
         }
-        /* General styles remain the same */
+       
 
-/* For smaller screens like mobile and tablets */
+
 @media screen and (max-width: 768px) {
     .divider {
         border-top: 2px solid rgb(247, 231, 231);
-        margin: 0; /* Remove margin on small screens */
-        width: 100%; /* Ensure full width on small screens */
+        margin: 0;
+        width: 100%;
         box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
     }
 
     .about-frame,
     .service {
         margin: 30px;
-        padding: 15px 0; /* Reduced padding on smaller screens */
+        padding: 15px 0; 
         width: 80%;
     }
 
@@ -442,35 +442,36 @@ margin-top: 30px;
 
     .form-container {
         width: 90%;
+        
     }
 
     .video-container {
-        width: 90%; /* Makes the video take up the full width */
+        width: 90%; 
         margin: 20px;
         
     }
 }
 @media (max-width: 768px) {
     .carousel-item img {
-        height: 60vh; /* or a value appropriate for mobile */
+        height: 60vh; 
     }
 }
 @media (max-width: 768px) {
     .about-frame {
-        margin-top: 20px; /* Adjust margin */
-        padding: 10px; /* Adjust padding */
+        margin-top: 20px; 
+        padding: 10px;
     }
 }
 @media (max-width: 768px) {
     header {
-        height: auto; /* Allow the header to be responsive */
+        height: auto; 
     }
 }
 @media (max-width: 768px) {
     .container,
     .container1,
     .container2 {
-        margin-top: 20px; /* Adjust this value as needed */
+        margin-top: 20px; 
         padding: 10px;
     }
     .form-container{
@@ -480,9 +481,9 @@ margin-top: 30px;
 }
 @media screen and (max-width: 768px) {
     header h2 {
-        font-size: 0.5rem; /* Adjust the size to your preference */
-        line-height: 1.2; /* Adjust line height for better spacing */
-        text-align: center; /* Center-align the header if desired */
+        font-size: 0.5rem;
+        line-height: 1.2; 
+        text-align: center; 
     }
 }
 .getintouch {
@@ -498,19 +499,24 @@ margin-top: 30px;
 h2{
     color: white;
 }
-
+@media screen and (max-width: 768px) {
+    .getintouch {
+        width: 80%;
+        margin-top: 30px;
+    }
+}
 
    </style>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg ">
       
-        <!-- Toggle button for mobile view -->
+       
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
     
-        <!-- Collapsible content -->
+        
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
@@ -690,7 +696,7 @@ playIcon.addEventListener('click', () => {
     playIcon.style.display = 'none'; 
 });
 
-// Intersection Observer for the About section
+
 const aboutSection = document.querySelector('.about-frame');
 
 const observerAbout = new IntersectionObserver((entries) => {
